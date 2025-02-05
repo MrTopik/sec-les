@@ -1,1 +1,0 @@
-print("H\nH\nY")
