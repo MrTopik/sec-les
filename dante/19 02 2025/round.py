@@ -1,0 +1,5 @@
+print(round(4.2))
+print(round(4.9))
+print(int(28.71))
+print(round(28.71))
+print(round(3.14,2))
