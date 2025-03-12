@@ -16,23 +16,52 @@ def soru1():
         except ValueError:
             print("Tekrar deneyin")
 def soru2():
-    kgir = int(input("Kisa kenari girin: "))
-    ugir = int(input("Uzun kenari girin: "))
-    cevre = (ugir*2)+(kgir*2)
-    alan = (ugir*kgir)
-    print(f"Dikdortgenin Alani: {alan} Cevresi: {cevre}")
+    st2 = False
+    while st2 == False:
+        kgir = input("Kisa kenari girin: ")
+        ugir = input("Uzun kenari girin: ")
+        try:
+            kgir = int(kgir)
+            ugir = int(ugir)
+            st2 = True
+            cevre = (ugir*2)+(kgir*2)
+            alan = (ugir*kgir)
+            print(f"Dikdortgenin Alani: {alan} Cevresi: {cevre}")
+        except ValueError:
+            print("Sayi girmediniz")
 def soru3():
-    gsayi = int(input("Bir sayi girin: "))
-    print(f"{gsayi} sayisinin karesi {gsayi**2}'dir")
+    st3 = False
+    while st3 == False:
+        gsayi = input("Bir sayi girin: ")
+        try:
+            gsayi = int(gsayi)
+            st3 = True
+            print(f"{gsayi} sayisinin karesi {gsayi**2}'dir")
+        except ValueError:
+            print("Sayi girmediniz")
 def soru4():
-    ad = input("Adinizi girin: ")
-    dtarih = int(input("Dogum yilinizi girin: "))
-    yas = cyear - dtarih
-    print(f"Merhaba {ad} yasiniz {yas}'dir")
+    st4 = False
+    while st4 == False:
+        ad = input("Adinizi girin: ")
+        dtarih = input("Dogum yilinizi girin: ")
+        try:
+            dtarih = int(dtarih)
+            st4 = True
+            yas = cyear - dtarih
+            print(f"Merhaba {ad} yasiniz {yas}'dir")
+        except ValueError:
+            print("Sayi girmediniz")
 def soru5():
-    ad2 = input("Adinizi girin: ")
-    kitap = int(input("Bu yil okudugunuz kitap sayisi: "))
-    print(f"{ad2} bu yil {kitap} okudu")
+    st5 = False
+    while st5 == False:
+        ad2 = input("Adinizi girin: ")
+        kitap = input("Bu yil okudugunuz kitap sayisi: ")
+        try:
+            kitap = int(kitap)
+            st5 = True
+            print(f"{ad2} bu yil {kitap} kitap okudu")
+        except ValueError:
+            print("Sayi girmediniz")
 test = False
 while test == False:
     opt = input("Sayi girin: ")
