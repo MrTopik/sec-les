@@ -22,7 +22,7 @@ def soru2():
     alan = (ugir*kgir)
     print(f"Dikdortgenin Alani: {alan} Cevresi: {cevre}")
 def soru3():
-    gsayi = int(input("Bir sayi girin: ")
+    gsayi = int(input("Bir sayi girin: "))
     print(f"{gsayi} sayisinin karesi {gsayi**2}'dir")
 def soru4():
     ad = input("Adinizi girin: ")
@@ -31,7 +31,7 @@ def soru4():
     print(f"Merhaba {ad} yasiniz {yas}'dir")
 def soru5():
     ad2 = input("Adinizi girin: ")
-    kitap = int(input("Bu yil okudugunuz kitap sayisi: ")
+    kitap = int(input("Bu yil okudugunuz kitap sayisi: "))
     print(f"{ad2} bu yil {kitap} okudu")
 test = False
 while test == False:
