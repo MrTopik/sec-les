@@ -1,0 +1,1 @@
+print("Bu" , "bir" , "test" , "kodudur" , sep=" ^ ")
